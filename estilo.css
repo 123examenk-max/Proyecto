@@ -1,0 +1,25 @@
+/* Custom map marker pulse effect */
+.marker-ring {
+    animation: ripple 2s linear infinite;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+/* Scrollbar hiding for clean UI */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
